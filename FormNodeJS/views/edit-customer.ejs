@@ -1,0 +1,25 @@
+<div class="page-data">
+	<form method="post" action="/customers/edit/<%=data[0].id%>">
+		<table cellpadding="11">
+			<tr>
+				<td class="label">Name: </td><td><input type="text" name="name" value="<%=data[0].name%>"></input></td>
+			</tr>
+			<tr>
+				<td class="label" valign="top">Address: </td><td valign="top">: <textarea name="address" cols="30" rows="5"><%=data[0].address%></textarea></td>
+			</tr>
+			<tr>
+				<td class="label">Email: </td><td><input type="text" name="email" value="<%=data[0].email%>"></input></td>
+			</tr>
+			<tr>
+				<td class="label">Phone: </td><td><input type="text" name="phone" value="<%=data[0].phone%>"></input></td>
+			</tr>
+			<tr>
+				<td class="label"></td>
+				<td>
+					<input type="submit" name="submit" value="Save"/>
+					<input type="button" name="cancel" value="Cancel" class="cancel" onclick = "cancelAdd()"></input>
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
